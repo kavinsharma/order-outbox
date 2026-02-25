@@ -7,7 +7,7 @@ Order completion use case: complete an order in a single transaction with domain
 - **repo/** — Order + outbox mutations; outbox rows use event timestamp for `created_at`
 - **usecases/complete_order/** — `Execute` builds a plan (order + outbox mutations), `Apply` runs it in one tx
 
-See `SCHEMA.sql` for the outbox DDL, `REVIEW.md` for the buggy implementation review, and `ANSWERS.md` for the written questions.
+Deliverables: `SCHEMA.sql` (outbox DDL), `REVIEW.md` (buggy implementation review), `ANSWERS.md` (written Q&A).
 
 ### Build and test
 
